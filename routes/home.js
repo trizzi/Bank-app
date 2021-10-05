@@ -15,7 +15,7 @@ router.post('/ ', (req, res) => {
 
 // route    PUT api/users
 // access  Private
-router.put('/:id', (req, res) => {
+router.put('/', (req, res) => {
 	res.send('Update bank details');
 });
 
