@@ -37,7 +37,6 @@ const AuthState = (props) => {
 				type: USER_LOADED,
 				payload: res.data,
 			});
-			loadUser();
 		} catch (err) {
 			dispatch({ type: AUTH_ERROR });
 		}
@@ -52,7 +51,7 @@ const AuthState = (props) => {
 		};
 		try {
 			const res = await axios.post(
-				'/api/users',
+				'/api/users ',
 				formData,
 				config
 			);
